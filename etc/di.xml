@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Controller\Cart\Add">
+        <plugin name="Redirect_To_Checkout" type="PHPCuong\Checkout\Plugin\Controller\Cart\Add" sortOrder="1"/>
+    </type>
+    <type name="Magento\Catalog\Helper\Image">
+        <plugin name="Change_The_Product_Image_On_Checkout_Page" type="PHPCuong\Checkout\Plugin\Helper\Image" sortOrder="1"/>
+    </type>
+</config>
